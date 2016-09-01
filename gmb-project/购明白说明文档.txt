@@ -1,0 +1,24 @@
+1.app.js: 为购明白的入口文件。
+2.static：存放静态文件
+3.routes：存放路由文件
+4.views：存放模版文件
+	widget：存放公共文件，包括头尾等
+		1）gmb.macro.tpl：用swig模板定义了一些宏代码，包括head标签里的内容，以及样式和js的引入。
+		2）head-css.tpl：公共样式模板。
+		3）head-js.tpl：公共js模板。
+		4）head.tpl：公共头模板。
+		5）foot.tpl：公共尾部模板。
+		6）go-top.tpl：回到顶部模板。
+		7）global.tpl：公共域名配置文件
+	入口页面：
+		1）zsk.tpl：知识库列表页
+		2）zsk-more：知识库详情页
+		3）zj.tpl：专辑列表页
+		4）zj-more：专辑详情页
+		5）wj.tpl：玩家页
+		6）wj-more：玩家详情页
+		7）weekly：知家周刊页
+		8）search：搜索页
+5.dev-cart：用来生成雪碧图和合并模板，上线时不用放到服务器上
+6.node_modules：存放插件
+7.util：打印日记和处理时间文件。暂时没用到。

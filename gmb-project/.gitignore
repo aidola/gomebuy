@@ -1,0 +1,16 @@
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+.tern-port
+.DS_Store
+pids
+logs
+results
+WEB-INF
+npm-debug.log
+dev-cart

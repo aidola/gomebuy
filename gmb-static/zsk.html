@@ -1,0 +1,348 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- IE使用最高版本，如果支持Google Chrome Frame：GCF，则使用GCF渲染  -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!-- 双核浏览器使用极速模式 -->
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 新 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+<!--右侧导航css插件-->
+<link rel="shortcut icon" href="http://www.gome.com.cn/ec/homeus/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+<!-- 自己的css -->
+<link rel="stylesheet" href="css/css.css" />
+<link rel="stylesheet" type="text/css" href="css/dropload.css">
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="js/jquery-1.11.3.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="js/bootstrap.min.js"></script>
+<!--fastclick-->
+<script src="js/fastclick.js"></script>
+<!-- IE9以下对HTML5标签的支持做兼容 -->
+<!-- respond.js解决IE6-8不支持响应式布局media query -->
+<!--[if lt IE 9]>
+<script src="js/respond.min.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<![endif]-->
+<title>知识库</title>
+</head>
+
+<body class="navbar-fixed-top-padding cbp-spmenu-push">
+<!--头-->
+<div class="container-fluid navbar-fixed-top top-marks">
+    <div class="container">
+        <img src="images/tiger-ico.png" class="tiger-ico" alt=""/>
+        <a href="" class="small">国美在线</a>
+        <a href="" class="small">国美地产</a>
+        <a href="" class="small">国美金控</a>
+    </div>
+</div>
+<header class="container-fluid navbar-fixed-top header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-7 padding-left0"><a class="navbar-brand padding-left0" href="#"><img src="images/u167.png" width="95" alt=""></a></div>
+            <div class="col-lg-8 col-md-8 col-sm-7 hidden-xs navbar navbar-default index-nav">
+                <ul class="nav navbar-nav navbar-right gmb-nav">
+                    <li class="" role="presentation"><a href="#"><span class="glyphicon glyphicon-globe color-native"></span>专辑</a></li>
+                    <li role="presentation"><a href="#"><span class="glyphicon glyphicon-book color-native"></span>知识库</a></li>
+                    <li role="presentation"><a href="#"><span class="glyphicon glyphicon-bell color-native"></span>知家周刊</a></li>
+                    <li role="presentation"><a href="#"><span class="glyphicon glyphicon-tent color-native"></span>玩家</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-5 text-right search-collapse">
+                <button class="btn-search btn-search-collapse"><i class="glyphicon glyphicon-search color-danger color-native"></i></button>
+                <button type="button" class="btn-collapse btn-search-collapse showRightPush" id="toRight">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="gome-search">
+        <div class="container">
+            <div class="input-group">
+                <input type="text" id="headSearch" placeholder="输入关键词查找.." class="form-control" />
+                <span class="input-group-addon search-close"><i class="glyphicon glyphicon-remove"></i></span>
+            </div>
+        </div>
+    </div>
+</header>
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+    <h3>
+        <img src="images/u168.png" alt=""/>
+        <button type="button" class="btn-collapse btn-search-collapse cbp-close">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </h3>
+    <a href="#">专辑<span class="glyphicon glyphicon-menu-right pull-right"></span></a>
+    <a href="#">知识库<span class="glyphicon glyphicon-menu-right pull-right"></span></a>
+    <a href="#">知家周刊<span class="glyphicon glyphicon-menu-right pull-right"></span></a>
+    <a href="#">玩家<span class="glyphicon glyphicon-menu-right pull-right"></span></a>
+    <a href="#">其他<span class="glyphicon glyphicon-menu-right pull-right"></span></a>
+    <a href="#">更多<span class="glyphicon glyphicon-menu-right pull-right"></span></a>
+    <a href="#">等等<span class="glyphicon glyphicon-menu-right pull-right"></span></a>
+</nav>
+<div class="container">
+    <div class="zsk-marks-container">
+        <div class="textlink-bar page-header clearfix">
+            <div class="pull-left">
+                <div class="textlink-bar-label">知识库</div>
+            </div>
+            <span class="pin-selected hidden-lg hidden-md hidden-sm">全部</span>
+            <div class="pull-left hidden-xs">
+                <ul class="textlink-bar-list">
+                    <li class="active"><a href="">全部</a></li>
+                    <li><a href="">平板电视</a></li>
+                    <li><a href="">洗衣机</a></li>
+                    <li><a href="">空调</a></li>
+                    <li><a href="">油烟机</a></li>
+                    <li><a href="">空气净化器</a></li>
+                </ul>
+            </div>
+            <div class="pull-right btn-group hidden-lg hidden-md hidden-sm">
+                <button type="button" class="btn btn-sky btn-dropdown-edge dropdown-toggle btn-dropdown-point" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="point3">...</span></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-gmb">
+                    <li><a href="javascript:;">全部</a></li>
+                    <li class="active"><a href="javascript:;">洗衣机</a></li>
+                    <li><a href="javascript:;">空调</a></li>
+                    <li><a href="javascript:;">油烟机</a></li>
+                    <li><a href="javascript:;">空气净化器</a></li>
+                </ul>
+            </div>
+            <div class="hidden-xs pull-right textlink-bar-tab">
+                <div class="btn-group">
+                    <a href="javascript:;" class="btn btn-default btn-sky btn-sharp-edge">最新</a>
+                    <a href="javascript:;" class="btn btn-default btn-sharp-edge">热门</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid zsk-article-list-container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 zsk-left">
+                <ul>
+                    <li>
+                        <div class="row">
+                            <div class="hidden-xs col-sm-4 col-md-3 col-lg-3">
+                                <a href=""><img src="images/u625.jpg" class="big100-img" alt=""/></a>
+                            </div>
+                            <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+                                <dl>
+                                    <dt><a href="">如何选择平板电视尺寸和观看距离？</a></dt>
+                                    <dd>对于多数家庭而言，房间的面积都是有限的，小一点的15-20平方米，大点的客厅也就30平方米左右。一般地，20平方以内的房间，观看距离在3米左右，30平方左右的房间，观看距离为4米左右</dd>
+                                </dl>
+                                <hr/>
+                                <div class="under-info row">
+                                    <div class="under-info-time col-xs-7 col-sm-7 col-md-7 col-lg-7 small">发布于2016-6-28 11:31:02</div>
+                                    <div class="under-info-marks col-xs-5 col-sm-5 col-md-5 col-lg-5 text-right">
+                                        <span class="glyphicon glyphicon-tag color-grey small"></span>
+                                        <span class="label color-grey small">电视</span>
+                                        <span class="label color-grey small">购物常识</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="hidden-xs col-sm-4 col-md-3 col-lg-3">
+                                <a href=""><img src="images/u626.jpg" class="big100-img" alt=""/></a>
+                            </div>
+                            <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+                                <dl>
+                                    <dt><a href="">如何选择平板电视尺寸和观看距离？</a></dt>
+                                    <dd>对于多数家庭而言，房间的面积都是有限的，小一点的15-20平方米，大点的客厅也就30平方米左右。一般地，20平方以内的房间，观看距离在3米左右，30平方左右的房间，观看距离为4米左右</dd>
+                                </dl>
+                                <hr/>
+                                <div class="under-info row">
+                                    <div class="under-info-time col-xs-7 col-sm-7 col-md-7 col-lg-7 small">发布于2016-6-28 11:31:02</div>
+                                    <div class="under-info-marks col-xs-5 col-sm-5 col-md-5 col-lg-5 text-right">
+                                        <span class="glyphicon glyphicon-tag color-grey small"></span>
+                                        <span class="label color-grey small">电视</span>
+                                        <span class="label color-grey small">购物常识</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="hidden-xs col-sm-4 col-md-3 col-lg-3">
+                                <a href=""><img src="images/u627.jpg" class="big100-img" alt=""/></a>
+                            </div>
+                            <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+                                <dl>
+                                    <dt><a href="">如何选择平板电视尺寸和观看距离？</a></dt>
+                                    <dd>对于多数家庭而言，房间的面积都是有限的，小一点的15-20平方米，大点的客厅也就30平方米左右。一般地，20平方以内的房间，观看距离在3米左右，30平方左右的房间，观看距离为4米左右</dd>
+                                </dl>
+                                <hr/>
+                                <div class="under-info row">
+                                    <div class="under-info-time col-xs-7 col-sm-7 col-md-7 col-lg-7 small">发布于2016-6-28 11:31:02</div>
+                                    <div class="under-info-marks col-xs-5 col-sm-5 col-md-5 col-lg-5 text-right">
+                                        <span class="glyphicon glyphicon-tag color-grey small"></span>
+                                        <span class="label color-grey small">电视</span>
+                                        <span class="label color-grey small">购物常识</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="hidden-xs col-sm-4 col-md-3 col-lg-3">
+                                <a href=""><img src="images/u628.jpg" class="big100-img" alt=""/></a>
+                            </div>
+                            <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+                                <dl>
+                                    <dt><a href="">如何选择平板电视尺寸和观看距离？</a></dt>
+                                    <dd>对于多数家庭而言，房间的面积都是有限的，小一点的15-20平方米，大点的客厅也就30平方米左右。一般地，20平方以内的房间，观看距离在3米左右，30平方左右的房间，观看距离为4米左右</dd>
+                                </dl>
+                                <hr/>
+                                <div class="under-info row">
+                                    <div class="under-info-time col-xs-7 col-sm-7 col-md-7 col-lg-7 small">发布于2016-6-28 11:31:02</div>
+                                    <div class="under-info-marks col-xs-5 col-sm-5 col-md-5 col-lg-5 text-right">
+                                        <span class="glyphicon glyphicon-tag color-grey small"></span>
+                                        <span class="label color-grey small">电视</span>
+                                        <span class="label color-grey small">购物常识</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="hidden-xs col-sm-4 col-md-3 col-lg-3">
+                                <a href=""><img src="images/u628.jpg" class="big100-img" alt=""/></a>
+                            </div>
+                            <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+                                <dl>
+                                    <dt><a href="">如何选择平板电视尺寸和观看距离？</a></dt>
+                                    <dd>对于多数家庭而言，房间的面积都是有限的，小一点的15-20平方米，大点的客厅也就30平方米左右。一般地，20平方以内的房间，观看距离在3米左右，30平方左右的房间，观看距离为4米左右</dd>
+                                </dl>
+                                <hr/>
+                                <div class="under-info row">
+                                    <div class="under-info-time col-xs-7 col-sm-7 col-md-7 col-lg-7 small">发布于2016-6-28 11:31:02</div>
+                                    <div class="under-info-marks col-xs-5 col-sm-5 col-md-5 col-lg-5 text-right">
+                                        <span class="glyphicon glyphicon-tag color-grey small"></span>
+                                        <span class="label color-grey small">电视</span>
+                                        <span class="label color-grey small">购物常识</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!--上下页-->
+                <nav>
+                    <ul class="pager index-pages" id="index-pages">
+                        <li><button class="btn pre-btn btn-forbidden"><i class="glyphicon glyphicon-menu-left"></i>&nbsp;上一页</button></li>
+                        <li><button class="btn next-btn">下一页&nbsp;<i class="glyphicon glyphicon-menu-right"></i></button></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="hidden-xs col-sm-3 col-md-3 col-lg-3 zsk-right right-list ">
+                <div class="zsk-right-01">
+                    <a href=""><img src="images/u657.jpg" class="img-responsive img-thumbnail" alt=""/></a>
+                </div>
+                <div class="zsk-right-01">
+                    <a href=""><img src="images/u658.jpg" class="img-responsive img-thumbnail" alt=""/></a>
+                </div>
+                <div class="zsk-right-02 right-article-list">
+                    <div class="page-header small-page-header">
+                        <h4 class="modal-title text-bold">热门文章</h4>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="row small-row">
+                                <div class="hidden-xs hidden-sm hidden-md col-lg-4 padding-little">
+                                    <a href=""><img src="images/u625.png" class="img-responsive" alt=""/></a>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
+                                    <dl>
+                                        <dt><a href="">等离子与液晶的区别</a></dt>
+                                        <dd class="small color-grey">等离子电视（PDP）和液晶电视（LED LCD）虽然表面上十分相像，但本质上却有很大差别</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row small-row">
+                                <div class="hidden-xs hidden-sm hidden-md col-lg-4 padding-little">
+                                    <a href=""><img src="images/u625.png" class="img-responsive" alt=""/></a>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
+                                    <dl>
+                                        <dt><a href="">等离子与液晶的区别</a></dt>
+                                        <dd class="small color-grey">等离子电视（PDP）和液晶电视（LED LCD）虽然表面上十分相像，但本质上却有很大差别</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row small-row">
+                                <div class="hidden-xs hidden-sm hidden-md col-lg-4 padding-little">
+                                    <a href=""><img src="images/u625.png" class="img-responsive" alt=""/></a>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
+                                    <dl>
+                                        <dt><a href="">等离子与液晶的区别</a></dt>
+                                        <dd class="small color-grey">等离子电视（PDP）和液晶电视（LED LCD）虽然表面上十分相像，但本质上却有很大差别</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid footer">
+    <div class="footer-images">
+        <div class="text-center">
+            <img src="images/u165.png" class="" alt=""/>
+        </div>
+    </div>
+    <div class="text-center text-muted">©2000-2016 国美在线电子商务有限公司版权所有  京公安网备11010502027062  沪ICP备11009419号  沪B2-20120004号</div>
+</div>
+<div class="go-top" title="返回顶部"><span class="glyphicon glyphicon-arrow-up"></span></div>
+<script src="js/zsk-plugin.js"></script>
+<script src="js/go_top.js"></script>
+<script>
+$(function(){
+	$('.textlink-bar-tab .btn-group>.btn').on('click',function(){
+		$(this).addClass('btn-sky').siblings().removeClass('btn-sky');
+	});
+
+    $('.pin-selected').html($('.dropdown-menu-gmb>li.active').find('a').html());
+    $('.dropdown-menu-gmb>li').on('click',function(){
+        $(this).addClass('active').siblings().removeClass('active');
+        $('.pin-selected').html($(this).find('a').html());
+
+    });
+    //fastclick
+    FastClick.attach(document.body);
+	//hover阴影
+	/*$('#imgTxtList').on('mouseenter','.detail-list-box',function(ev) {
+       $(this).find('.caption').css('opacity',0).end().find('.list-mask').children().show();;
+    });
+    $('#imgTxtList').on('mouseleave','.detail-list-box',function(ev) {
+        var that = $(this);
+         $(this).find('.caption').css('opacity',1).end().find('.list-mask').children().hide();
+    });*/
+    console.log((!(~+[])+{})[~!+[]*~+""]+(typeof [])[+""]+("vpn")[+[]]+(!(!(~+[]))+{})[(~(+[])+~(+"")+~(+""))*~(+"")] );
+	//返回顶部
+    $('.go-top').goTop();
+});
+</script>
+</body>
+</html>
