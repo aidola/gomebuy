@@ -1,0 +1,16 @@
+var GTPL={}
+$.extend({
+	encode: function( text ) {
+		return ("" + text).split("<").join("&lt;").split(">").join("&gt;").split('"').join("&#34;").split("'").join("&#39;");
+	}
+})
+
+GTPL.imglist=function(data){ var $fn=function (jQuery,$item
+/**/) {
+var $=jQuery,call,__=[],$data=$item.data;with($data){__.push('');if((typeof(list)!=='undefined' && (list)!=null) && (typeof(list)==='function'?(list).call($item):(list))){__.push('      ');if((typeof(list.length>0)!=='undefined' && (list.length>0)!=null) && (typeof(list.length>0)==='function'?(list.length>0).call($item):(list.length>0))){__.push('          ');if(typeof(list)!=='undefined' && (list)!=null){$.each((typeof(list)==='function'?(list).call($item):(list)),function(i, item){with(this){__.push('              <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 imglist">                  <a num="');if(typeof(item.id)!=='undefined' && (item.id)!=null){__.push($.encode((typeof(item.id)==='function'?(item.id).call($item):(item.id))));}__.push('" href="javascript:;"><img src="');if(typeof(item.topImgUrl)!=='undefined' && (item.topImgUrl)!=null){__.push($.encode((typeof(item.topImgUrl)==='function'?(item.topImgUrl).call($item):(item.topImgUrl))));}__.push('"></a>              </div>          ');}});}__.push('      ');}__.push('  ');}__.push('');}return __;
+};return $fn($,{data:data||{}}).join('')};
+
+GTPL.topictitle=function(data){ var $fn=function (jQuery,$item
+/**/) {
+var $=jQuery,call,__=[],$data=$item.data;with($data){__.push('<div class="week-s-show week-s-show-c hidden-sm hidden-md hidden-lg"><span>第');if(typeof(topicIssue)!=='undefined' && (topicIssue)!=null){__.push($.encode((typeof(topicIssue)==='function'?(topicIssue).call($item):(topicIssue))));}__.push('期</span></div>  <div class="row week-title-box">      <div class="title-box col-xs-12 col-sm-8 col-md-8 col-lg-10">          <h1 id="weeklyT">');if(typeof(title)!=='undefined' && (title)!=null){__.push($.encode((typeof(title)==='function'?(title).call($item):(title))));}__.push('</h1>          <div class="row bdshare-parent">              <div class="under-info-time col-xs-12 col-sm-5 col-md-3 col-lg-2 small">');if(typeof(publishTime)!=='undefined' && (publishTime)!=null){__.push($.encode((typeof(publishTime)==='function'?(publishTime).call($item):(publishTime))));}__.push('</div>              <!--分享到-->              <div class="bdshare-box hidden-xs col-xs-12 col-sm-7 col-md-9 col-lg-10">                  <div class="bdsharebuttonbox" data-tag="share_1">                      <span class="small color-grey sharetoText">分享到&nbsp;</span>                      <a class="bds_tsina" data-cmd="tsina"></a>                      <a class="bds_weixin" data-cmd="weixin"></a>                      <a class="bds_count" data-cmd="count" style="display:none"></a>                  </div>              </div>          </div>      </div>      <div class="week-s-show pull-right  hidden-xs"><span>第');if(typeof(topicIssue)!=='undefined' && (topicIssue)!=null){__.push($.encode((typeof(topicIssue)==='function'?(topicIssue).call($item):(topicIssue))));}__.push('期</span></div>  </div>');}return __;
+};return $fn($,{data:data||{}}).join('')};
